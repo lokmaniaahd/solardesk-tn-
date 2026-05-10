@@ -440,7 +440,7 @@ body { font-family: 'DM Sans', sans-serif; background: var(--white); color: var(
         <div class="skill-item"><div class="skill-name">Excel avancé</div><div class="skill-bar-bg"><div class="skill-bar" style="width:90%;"></div></div></div>
         <div class="skill-item"><div class="skill-name">SolidWorks / SketchUp</div><div class="skill-bar-bg"><div class="skill-bar" style="width:78%;"></div></div></div>
         <div class="skill-item"><div class="skill-name">Canva / CapCut</div><div class="skill-bar-bg"><div class="skill-bar" style="width:88%;"></div></div></div>
-        <div class="skill-item"><div class="skill-name">HAP / RETScreen</div><div class="skill-bar-bg"><div class="skill-bar" style="width:80%;"></div></div></div>
+        <div class="skill-item"><div class="skill-name">Tsol / RETScreen</div><div class="skill-bar-bg"><div class="skill-bar" style="width:80%;"></div></div></div>
       </div>
     </div>
   </div>
@@ -526,7 +526,7 @@ body { font-family: 'DM Sans', sans-serif; background: var(--white); color: var(
         <div class="livr-name lang-en">Grid-tied PV sizing study</div>
         <div class="livr-desc lang-fr">Base de données panneaux (JA Solar, AIKO, Jinko), calcul Voc/Isc corrigé température, compatibilité onduleur, conformité STEG NC 15-100.</div>
         <div class="livr-desc lang-en">Panel database (JA Solar, AIKO, Jinko), temperature-corrected Voc/Isc, inverter compatibility, STEG NC 15-100 compliance.</div>
-        <div class="livr-footer"><span class="livr-format">Excel + PDF</span><span class="livr-price">50 TND</span></div>
+        <div class="livr-footer"><span class="livr-format">Excel + PDF</span></div>
       </div>
     </div>
 
@@ -554,7 +554,7 @@ body { font-family: 'DM Sans', sans-serif; background: var(--white); color: var(
         <div class="livr-name lang-en">Solar pumping sizing study</div>
         <div class="livr-desc lang-fr">8 feuilles : site & besoins, HMT, pompe, champ PV, onduleur VFD, câblage, bilan 12 mois, synthèse. Forages jusqu'à 200 m.</div>
         <div class="livr-desc lang-en">8 sheets: site & needs, TDH, pump, PV array, VFD inverter, wiring, 12-month report, summary. Boreholes up to 200 m.</div>
-        <div class="livr-footer"><span class="livr-format">Excel · 8 feuilles</span><span class="livr-price">60 TND</span></div>
+        <div class="livr-footer"><span class="livr-format">Excel · 8 feuilles</span></div>
       </div>
     </div>
 
@@ -576,7 +576,7 @@ body { font-family: 'DM Sans', sans-serif; background: var(--white); color: var(
         <div class="livr-name lang-en">STEG File + Installation Report</div>
         <div class="livr-desc lang-fr">Fiche client, fiche installation, chronologie STEG, coûts détaillés, caractéristiques techniques. Conforme exigences STEG.</div>
         <div class="livr-desc lang-en">Client sheet, installation sheet, STEG timeline, detailed costs, technical specs. Compliant with STEG requirements.</div>
-        <div class="livr-footer"><span class="livr-format">Word + PDF</span><span class="livr-price">40 TND</span></div>
+        <div class="livr-footer"><span class="livr-format">Word + PDF</span></div>
       </div>
     </div>
 
@@ -601,7 +601,7 @@ body { font-family: 'DM Sans', sans-serif; background: var(--white); color: var(
         <div class="livr-name lang-en">Bilingual warranty & after-sales file</div>
         <div class="livr-desc lang-fr">N° série équipements, conditions garantie installateur + fournisseur, guide utilisation onduleur, codes erreur, procédure SAV. FR / AR.</div>
         <div class="livr-desc lang-en">Equipment serial numbers, installer + supplier warranty terms, inverter user guide, error codes, after-sales procedure. FR / AR.</div>
-        <div class="livr-footer"><span class="livr-format">Word · FR / AR</span><span class="livr-price">25 TND</span></div>
+        <div class="livr-footer"><span class="livr-format">Word · FR / AR</span></div>
       </div>
     </div>
 
@@ -621,7 +621,7 @@ body { font-family: 'DM Sans', sans-serif; background: var(--white); color: var(
         <div class="livr-name lang-en">Client register + Kanban pipeline</div>
         <div class="livr-desc lang-fr">4 statuts (En attente → Étude → Devis → Installé), données techniques IPV & pompage. Notion / Word / Excel.</div>
         <div class="livr-desc lang-en">4 statuses (Pending → Study → Quote → Installed), IPV & pumping technical data. Notion / Word / Excel.</div>
-        <div class="livr-footer"><span class="livr-format">Word · Notion · Excel</span><span class="livr-price lang-fr">Pack 150 TND</span><span class="livr-price lang-en">Pack 150 TND</span></div>
+        <div class="livr-footer"><span class="livr-format">Word · Notion · Excel</span></div>
       </div>
     </div>
 
@@ -655,7 +655,7 @@ body { font-family: 'DM Sans', sans-serif; background: var(--white); color: var(
         <div class="livr-name lang-en">Monthly report & annual summary</div>
         <div class="livr-desc lang-fr">Synthèse des installations, puissance cumulée, économies estimées clients. Utile pour appels d'offres et bilan d'activité.</div>
         <div class="livr-desc lang-en">Installation summary, cumulative power, estimated client savings. Useful for tenders and activity reports.</div>
-        <div class="livr-footer"><span class="livr-format">Word + PDF</span><span class="livr-price lang-fr">inclus mensuel</span><span class="livr-price lang-en">included monthly</span></div>
+        <div class="livr-footer"><span class="livr-format">Word + PDF</span></div>
       </div>
     </div>
 
@@ -927,8 +927,12 @@ body { font-family: 'DM Sans', sans-serif; background: var(--white); color: var(
 function setLang(lang, btn) {
   document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
-  document.querySelectorAll('.lang-fr').forEach(el => el.style.display = lang === 'fr' ? '' : 'none');
-  document.querySelectorAll('.lang-en').forEach(el => el.style.display = lang === 'en' ? '' : 'none');
+  document.querySelectorAll('.lang-fr').forEach(el => {
+    el.style.display = lang === 'fr' ? (el.tagName === 'SPAN' ? 'inline' : 'block') : 'none';
+  });
+  document.querySelectorAll('.lang-en').forEach(el => {
+    el.style.display = lang === 'en' ? (el.tagName === 'SPAN' ? 'inline' : 'block') : 'none';
+  });
 }
 
 // Filter livrables
